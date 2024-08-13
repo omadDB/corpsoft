@@ -1,0 +1,707 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* Because we want header to be sticky later */
+  height: 11.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.contacts {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.toggle-language {
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 0.6rem 2rem;
+  border-radius: 999rem;
+  color: #333;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-language:hover {
+  color: #fff;
+  background-color: #3446eb;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contacts-phone {
+  margin-bottom: -0.1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.contacts-order-call {
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-bottom: 2px dashed #3446eb;
+  transition: all 0.2s;
+}
+
+.contacts-order-call:hover {
+  color: #4859ed;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  background: #4859ed;
+}
+
+.hero {
+  padding: 13rem 3.2rem;
+  background: url(https://marsoft.ru/bitrix/templates/seo/images/newcontext/fon-green1.png)
+      center top no-repeat,
+    #4859ed top repeat;
+}
+
+.hero-info .subheading {
+  color: #ffffffd2;
+}
+
+.hero-info .heading-primary {
+  color: #fff;
+  margin-bottom: 2.8rem;
+}
+
+.heading-primary-bold {
+  font-weight: 800;
+}
+
+.cta-form {
+  margin-top: 2.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-input-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.cta-form input,
+.cta-btn {
+  padding: 1.2rem 2.4rem;
+  border-radius: 999rem;
+  border: none;
+}
+
+.cta-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #000;
+}
+
+.cta-form input {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.cta-btn {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #2331b4;
+  cursor: pointer;
+  padding-right: 1rem;
+  gap: 2rem;
+}
+
+.cta-btn:hover {
+  background-color: #1e2ba0;
+}
+
+.cta-policy {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.cta-policy a:link,
+.cta-policy a:visited {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #6171fd;
+}
+
+.cta-policy a:hover,
+.cta-policy a:active {
+  color: #2331b4;
+}
+
+/**************************/
+/* FEATURES (SLIDER) */
+/**************************/
+
+.section-title {
+  line-height: 4.8rem;
+  font-weight: 700;
+  margin: 4rem 0;
+}
+
+.section-title span {
+  font-weight: 300;
+}
+
+.reusable-about {
+  display: flex;
+  align-items: center;
+}
+
+.reusable-about .subheading {
+  color: #333;
+  margin-bottom: 0;
+}
+
+.feature {
+  display: flex;
+  gap: 4rem;
+}
+
+.feature-content {
+  max-width: 75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature-content .heading-tertiary {
+  margin-bottom: 0;
+}
+
+.feature-text-main {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.feature-text-secondary {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.feature-cta {
+  background-color: #3446eb;
+  padding: 1.2rem 4.8rem;
+  gap: 4rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+/**************************/
+/* PRICING */
+/**************************/
+
+.section-pricing .subheading {
+  margin-bottom: 2rem;
+}
+
+.pricing-plan {
+  padding: 2.4rem;
+  border: 1px solid #a9b3ff;
+  border-radius: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-plan-recommended {
+  border: none;
+  background-color: #ebedfd;
+}
+
+.plan-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.plan-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.plan-price {
+  margin-top: 1rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.plan-price span {
+  margin-left: -0.6rem;
+  font-size: 1.4rem;
+}
+
+.list-item span {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  word-wrap: break-word;
+}
+
+.plan-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-deadline {
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.plan-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-cta {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.plan-subheading {
+  margin-top: -3.6rem;
+  grid-column: 1/ -1;
+}
+
+/**************************/
+/* SECTION FORM CTA */
+/**************************/
+
+.section-form-cta {
+  margin-top: 6rem;
+  background: #f1f1f1;
+  padding: 3rem 0;
+}
+
+.sales-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sales-cta h2 {
+  font-weight: 600;
+}
+
+.sales-cta p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  margin-top: 1.6rem;
+}
+
+.sales-cta .cta-input-group {
+  /* width: 30rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-cta .cta-btn {
+  align-self: center;
+}
+
+.sales-cta .cta-policy {
+  font-weight: 500;
+  margin-top: 5rem;
+}
+
+.sales-cta .cta-policy,
+.sales-cta .cta-policy a:link,
+.sales-cta .cta-policy a:visited {
+  color: #333;
+}
+
+.sales-cta .cta-policy a:hover,
+.sales-cta .cta-policy a:active {
+  color: #2331b4;
+}
+
+/**************************/
+/* WHY (Reasons) */
+/**************************/
+
+.section-why {
+  padding-bottom: 8rem;
+}
+
+.section-why .subheading {
+  font-weight: 500;
+}
+
+.reason-group {
+  column-gap: 2rem;
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.reason img {
+  width: 18rem;
+  margin-left: 3.6rem;
+}
+
+.reason-content {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.reason-content > p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #3446eb;
+  text-wrap: nowrap;
+}
+
+.reason-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reason-content-info h5 {
+  font-size: 1.8rem;
+}
+
+.reason-content-info p {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+/**************************/
+/* STEPS */
+/**************************/
+
+.section-steps {
+  background-color: #4859ed;
+  padding: 7rem 0;
+}
+
+.steps img {
+  width: 100%;
+}
+
+.steps .section-title {
+  color: #fff;
+}
+
+.steps-content {
+  margin-top: 2rem;
+  display: flex;
+  gap: 4.8rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: #fff;
+}
+
+.step p:first-child {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e2ba0;
+  text-wrap: nowrap;
+}
+
+.step h5 {
+  font-size: 1.8rem;
+}
+
+.step p {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+/**************************/
+/* CTA */
+/**************************/
+
+.section-cta {
+  background-color: #f1f1f1;
+}
+
+.cta {
+  padding: 3rem 0 3rem 32rem;
+  background: #f1f1f1
+    url(https://marsoft.ru/bitrix/templates/seo/images/block-down-form.jpg)
+    no-repeat center top;
+}
+
+.cta .heading-tertiary {
+  margin-bottom: 2rem;
+}
+
+.cta .heading-tertiary span {
+  font-weight: 700;
+}
+
+.cta .cta-policy {
+  margin-top: 1.6rem;
+}
+
+.cta .cta-policy,
+.cta .cta-policy a:link,
+.cta .cta-policy a:visited {
+  color: #111;
+}
+
+.cta .cta-policy a:hover,
+.cta .cta-policy a:active {
+  color: #2331b4;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  padding: 6rem 0;
+  background: url(https://marsoft.ru/bitrix/templates/seo/images/footer-fon.png)
+    no-repeat center bottom;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer-main {
+  display: flex;
+  align-items: start;
+  gap: 6.4rem;
+}
+
+.footer-main .contacts-info {
+  gap: 2rem;
+}
+
+.footer-secondary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links .link-main {
+  font-size: 1.4rem;
+  text-transform: none;
+}
+
+.location-text {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+}
+
+.location-text strong {
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #333;
+  margin-top: auto;
+}
+
+.footer-policy {
+  margin-top: -0.1rem;
+  line-height: 2rem;
+  color: #000;
+}
+
+.footer-policy a:link,
+.footer-policy a:visited {
+  color: #000;
+}
+
+.footer-policy a:hover,
+.footer-policy a:active {
+  color: #2331b4;
+}
+
+/*******************************************************************/
+/* REMARKETING PAGE */
+/**************************/
+
+.situation {
+  margin: 4rem 0;
+  padding: 0 4rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.situation-content h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.more-retargeting-problems {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.problem {
+  display: flex;
+  gap: 1rem;
+}
+
+.problem p {
+  margin-top: 0;
+}
+
+/*******************************************************************/
+/* PAYMENT PAGE */
+/**************************/
+
+.payment {
+  padding: 6rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment .heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.payment-form {
+  flex-direction: column;
+}
+
+.payment-form input {
+  border: 1px solid #cccccc;
+}
+
+.payment-form select {
+  padding: 1.2rem 2.4rem;
+  border-radius: 999rem;
+  border: 1px solid #cccccc;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  appearance: none;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+input[type="checkbox"] {
+  border: none;
+  outline: none;
+}
+
+.agreement p {
+  margin-top: 0;
+}
+
+.btn-payment {
+  font-weight: 600;
+  justify-content: center;
+  font-size: 1.6rem;
+}

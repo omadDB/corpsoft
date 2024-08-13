@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оплата</title>
+
+    <link rel="icon" href="corpsoft-favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header" style="border-bottom: 1px solid #999;">
+        <a href="/index.html">
+          <img
+            width="120px"
+            src="/corpsoft.jpg"
+            alt="Logo image"
+          />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link" href="/retargeting.html">Ретаргетинг / Ремаркетинг </a>
+            </li>
+            <li><a class="main-nav-link" href="/payment.html">Оплата</a></li>
+          </ul>
+        </nav>
+
+        <div class="contacts">
+          <!-- <button class="toggle-language" href="">English</button> -->
+          <div class="contacts-info">
+            <p class="contacts-phone">+7 (904) 192-16-47</p>
+            <!-- <div>
+              <a href="" class="contacts-order-call">Заказать звонок</a>
+            </div> -->
+            <p class="link-main contacts-email">esmontovvaceslav@gmail.com</p>
+          </div>
+        </div>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+    </div>
+
+    <main>
+      <section class="section-payment container">
+        <div class="payment">
+          <h3 class="heading-tertiary section-title">Оплата заказа</h3>
+
+          <form name="sign-up" class="cta-form payment-form">
+            <div class="cta-input-group payment-form">
+              <input type="text" placeholder="Имя" required />
+              <input type="text" placeholder="Номер заказа" required />
+              <input type="email" placeholder="Email" required />
+              <input type="text" placeholder="Сумма" required />
+              <select value="Eur">
+                <option value="EUR">EUR</option>
+              </select>
+              <div class="agreement">
+                <input type="checkbox">
+                <p class="paragraph">Принимаю условия договора - оферты и условий оплаты заказа.</p>
+              </div>
+
+              <button class="cta-btn btn-payment">
+                Оплатить
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section-cta">
+        <div class="cta container">
+          <h3 class="heading-tertiary">
+            Сэкономьте свое время <br> <span>оставьте заявку на консультацию</span>
+          </h3>
+          <form name="sign-up" class="cta-form">
+            <div class="cta-input-group">
+              <input type="text" placeholder="Адрес сайта" required />
+              <input type="tel" placeholder="Телефон" required />
+              <button class="cta-btn">
+                Получить предложение!
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
+
+            <div class="cta-policy">
+              Отправляя заявку, вы соглашаетесь с
+              <a href="/security-policy.html" rel="nofollow" target="_blank"
+                >условиями передачи информации.</a
+              >
+            </div>
+          </form>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-block container">
+            <div class="footer-main">
+                <a href="/index.html">
+                    <img
+                      width="120px"
+                      src="/corpsoft.jpg"
+                      alt="Logo image"
+                    />
+                </a>
+    
+                <div class="contacts">
+                  <div class="contacts-info">
+                    <p class="contacts-phone">Россия: +7 (904) 192-16-47</p>
+                    <!-- <div>
+                      <a href="" class="contacts-order-call">Заказать звонок</a>
+                    </div> -->
+                    <p class="link-main contacts-email">esmontovvaceslav@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="location">
+                    <ion-icon class="list-icon" name="location-sharp"></ion-icon>
+
+                    <div class="location-info">
+                      <p class="location-text">Россия, <strong>г. <br> Ульяновск, <br>
+                        ул. Азовская, дом 80<br></strong>
+                      </p>
+
+                        <div class="links">
+                          <a href="/public-offer.html" class="link-main" target="_blank">Публичная оферта</a>
+                          <a href="/payment-policy.html" class="link-main" target="_blank">Условия оплаты и возврата</a>
+                          <a href="/aml-policy.html" class="link-main" target="_blank">Политика AML/KYC</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-secondary">
+              <p class="copyright">
+                   &copy; <span class="year">2024</span> ИП Эсмонтов Вячеслав Алексеевич, <br>
+                   ИНН: 732716208805 | corpsoft.online
+              </p>
+              <p class="cta-policy footer-policy">Любая информация на сайте не является публичной офертой. <br>
+                  Пользуясь сайтом, вы соглашаетесь с нашей <a href="/security-policy.html" rel="nofollow" target="_blank">Политикой Конфиденциальности.</a></p>
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
